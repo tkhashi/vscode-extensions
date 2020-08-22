@@ -1,0 +1,30 @@
+#!/bin/zsh
+ 
+# Visual Studio Code :: Package list
+pkglist=(
+MS-CEINTL.vscode-language-pack-ja
+mosapride.zenkaku
+pkief.material-icon-theme
+nimda.deepdark-material
+oderwat.indent-rainbow
+coenraads.bracket-pair-colorizer-2
+ritwickdey.liveserver
+formulahendry.auto-rename-tag
+rebornix.ruby
+kaiwood.endwise
+misogi.ruby-rubocop
+bung87.rails
+abusaidm.html-snippets
+shardulm94.trailing-spaces
+naumovs.color-highlight
+vscodevim.vim
+chriskseidel.darwin
+mhutchie.git-graph
+vincaslt.highlight-matching-tag
+
+)
+ 
+for var in ${pkglist[@]}
+do
+    code --install-extension $var
+done
